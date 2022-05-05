@@ -29,56 +29,59 @@
           <img src="images/perfil.JPG" alt="Foto pessoal" />
         </div>
 
-        <h1>Lucas, o Pioneiro</h1>
+        <h1 id="userName">Lucas, o Pioneiro</h1>
         <p>See you space cowboy.</p>
-        <a href="https://instagram.com/luxquinhass">
+        <a href="https://github.com/lunguian" target="_blank">
           <img src="images/github.svg" alt="Icone Github" />
-          luxquinhass</a
+          lunguian</a
         >
 
         <p>
           An instructor focused on helping people start programming for web.
         </p>
 
-        <ul>
-          <li>
-            <a href="https://www.youtube.com/">
-              <img
-                src="images/youtube.svg"
-                alt="Youtube selo"
-                target="_blank"
-              />
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a href="https://www.youtube.com/" target="_blank">
+              <img src="images/youtube.svg" alt="Youtube selo" />
             </a>
           </li>
-          <li>
-            <a href="https://www.instagram.com/">
-              <img
-                src="images/insta.svg"
-                alt="Instagram selo"
-                target="_blank"
-              />
+          <li class="instagram">
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="images/insta.svg" alt="Instagram selo" />
             </a>
           </li>
-          <li>
-            <a href="https://www.facebook.com/">
-              <img
-                src="images/facebook.svg"
-                alt="Facebook selo"
-                target="_blank"
-              />
+          <li class="facebook">
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src="images/facebook.svg" alt="Facebook selo" />
             </a>
           </li>
-          <li>
-            <a href="">
-              <img
-                src="images/twitter.svg"
-                alt="Twitter selo"
-                target="_blank"
-              />
+          <li class="twitter">
+            <a href="https://twitter.com/home" target="_blank">
+              <img src="images/twitter.svg " alt="Twitter selo" />
             </a>
           </li>
         </ul>
       </div>
     </main>
+
+    <script>
+      const LinksSocialMedia = {
+        github: 'lunguian',
+        youtube: 'Lucas Soares Gonçalves',
+        facebook: 'Lucas Soares Gonçalves',
+        instagram: 'luxquinhass',
+        twitter: 'lucas, O πoneiro'
+      }
+
+      function changeSocialMediaLinks() {
+        for (let li of socialLinks.children) {
+          //const social = li.getAttribute('class')
+
+          alert(li.children[0].href)
+        }
+      }
+      changeSocialMediaLinks()
+    </script>
   </body>
 </html>
